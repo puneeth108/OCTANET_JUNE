@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	width: 300px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+	border-top: 5px solid #009578;
+	border-bottom: 5px solid #009578;
+    background-image: url('https://th.bing.com/th/id/OIP.fbhd7I4S0c36WBUONgtqvgAAAA?w=144&h=200&c=7&r=0&o=5&dpr=1.1&pid=1.7');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.todo__value {
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked) {
+	color: #555555;
+	background: #eeeeee;
+	text-decoration: line-through;
+	order: 1;
+}
